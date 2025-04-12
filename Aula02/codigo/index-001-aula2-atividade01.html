@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img.w850{
+            width:850px;
+        }
+        img.h850{
+            height:850px;
+        }
+        figure{
+            object-fit:auto;
+            border: 10px dashed purple;
+        }
+        img.w300_redonda{
+            width:300px;
+            height: auto;
+            clip-path: circle(50%);
+        }
+        img.wmax{
+                max-width: 100%;
+                height: auto;
+        }
+        body {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, rgb(95, 90, 90), #163999, #8e15a7);
+            min-height:100vh;
+        }
+        h1{
+            color:rgb(255, 255, 255);
+            font-size: 2.5em;
+            font-weight:bold;
+        }
+        p {
+            color:peru;
+            font-size:16px;
+            line-height:1.5;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .caixa {
+            background-color: rgb(51, 42, 42);
+            border: 3px dashed blueviolet;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemento HEADER --> 
+    <header>
+        <h1>Aula 02 - Imagens - Parte 01</h1>
+    </header>
+
+    <!-- Ememento MAIN - Área principal da página -->
+    <main>
+        <section id="section1">
+        <h2>Seção 1: Introdução</h2>
+        
+        <p>Está é a primeira seção da página. <br>
+            Aqui você pode adicionar informações
+            introdutórias.</p>
+
+            <div class="caixa">
+                Site muito feio
+        </section>
+       <section>
+        <h1>Imagen Original</h1>
+            <img src="img/paisagem-original.jpg"
+            alt="Por do sol"
+            width="800px">
+        </section>
+        <section id="section2">
+            <h1>Imagen com 850 px de largura</h1>
+            <img src="img/paisagem-original.jpg"
+            alt="Por do sol"
+            class="w850">
+        </section>
+        <figure>
+            <h1>Arraial do Cabo</h1>
+            <img src="img/paisagem-original.jpg"
+            alt="Por do sol"
+            class="w850">
+            <figcaption>
+                Praia em Arraial do Cabo, por papagaio
+            </figcaption>
+        </figure>
+        <figure>
+            <h1>Arraial do Cabo</h1>
+            <img src="img/paisagem-original.jpg"
+            alt="Por do sol"
+            class="h850">
+        </figure>
+        <figure>            
+            <h1>Arraial do Cabo</h1>
+            <img src="img/landscape-9300672_1920.jpg"
+            alt="Por do sol"
+            class="w300_redonda"><img src="img/landscape-9300672_1920.jpg"
+            alt="Por do sol"
+            class="w300_redonda"><img src="img/landscape-9300672_1920.jpg"
+            alt="Por do sol"
+            class="w300_redonda"><img src="img/landscape-9300672_1920.jpg"
+            alt="Por do sol"
+            class="w300_redonda">
+            <img src="img/landscape-9300672_1920.jpg"
+            alt="Por do sol"
+            class="w300_redonda">
+            <img src="img/wallpaper-8257343_1920.png"
+            alt="Por do sol"
+            class="w300_redonda">
+        </figure>
+        <figure>
+            <h1>Wallpaper</h1>
+            <img src="img/wallpaper-8257343_1920.png"
+            alt="Por do sol"
+            class="wmax">
+        </figure>
+    </main>
+
+    <!-- Elemento FOOTER - Roda-pé da página --> 
+    <footer id="footer">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
