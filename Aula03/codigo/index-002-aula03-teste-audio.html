@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        audio.estilizado {
+            width: 80%;
+            margin:15px auto;
+            background: rgb(255, 0, 0);
+            border-radius: 15px;
+            padding: 10px;
+        }
+        audio.estilizado:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .video-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+        .mapa {
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.mapa:hover {
+  transform: scale(1.01);
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 12px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header> 
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main> 
+        <audio controls class="estilizado">
+            <source src="https://cdn.pixabay.com/download/audio/2025/04/16/audio_0f3a88d5ca.mp3?filename=inolvidable-325561.mp3" type="audio/mpeg">
+            <source src="https://commons.wikimedia.org/audiosample.ogg" type="audio/ogg">
+            Seu navegador não suporta áudio HTML5.
+          </audio>
+        <video controls class="video-container">
+            <source src="https://cdn.pixabay.com/video/2025/03/16/265271_small.mp4?download" type="video/mp4">
+            <source src="https://commons.wikimedia.org/videosample.webm" type="video/webm">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+          <div class="mapa">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991440608207!2d2.292292615509614!3d48.858373608662095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1spt-BR!2sbr!4v1713123456789!5m2!1spt-BR!2sbr" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="mapa">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.9850149320514!2d-43.183787699999996!3d-22.504745399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x990807c6be3cdf%3A0xff1d91bdbb7ca9fb!2sSenac%20Petr%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1744849521451!5m2!1spt-BR!2sbr" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+            
+          </div>
+        </main>
+
+    <!-- Rodapé -->
+    <footer>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
